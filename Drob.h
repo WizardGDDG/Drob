@@ -1,35 +1,57 @@
 #pragma once
+#include <iostream>
 class Drob
 {
+private:
+	int numerator;
+	int denominator;
 public:
-	double numerator;
-	double denominator;
 
-	void vod(double a, double b)
+	void vod(int a, int b)
 	{
 		numerator = a;
 		denominator = b;
 	}
 
-	double plus()
+	int plus()
 	{
 		int a = numerator + denominator;
 		return a;
 	}
-	double minus()
+	int minus()
 	{
 		int a = numerator - denominator;
 		return a;
 	}
-	double ymnojenie()
+	int ymnojenie()
 	{
 		int a = numerator * denominator;
 		return a;
 	}
-	double delenie()
+	int delenie()
 	{
 		int a = numerator / denominator;
 		return a;
+	}
+
+	int getNumerator() const
+	{
+		return numerator;
+	}
+	int setNumerator(const int& newNumerator)
+	{
+		numerator = newNumerator;
+
+	}
+
+	double getDenominator() const
+	{
+		return denominator;
+	}
+	double setDenominator(const int& newDenominator)
+	{
+		denominator = newDenominator;
+
 	}
 };
 
