@@ -1,0 +1,21 @@
+#include <iostream>
+#include "Drob.h"
+#include "PhoneBook.h"
+using namespace std;
+int main()
+{
+    Drob drob;
+    
+    
+
+    double a;
+    cout << "Введите числитель: ";
+    cin >> a;
+
+    double b;
+    cout << "Введите знаменатель: ";
+    cin >> b;
+
+    drob.vod(a,b);
+    drob.plus();
+}
