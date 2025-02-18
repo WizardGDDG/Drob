@@ -7,12 +7,6 @@ private:
 	int denominator;
 public:
 
-	void vod(int a, int b)
-	{
-		numerator = a;
-		denominator = b;
-	}
-
 	int plus()
 	{
 		int a = numerator + denominator;
@@ -40,7 +34,7 @@ public:
 	}
 	int setNumerator(const int& newNumerator)
 	{
-		numerator = newNumerator;
+		return numerator = newNumerator;
 
 	}
 
@@ -50,7 +44,7 @@ public:
 	}
 	double setDenominator(const int& newDenominator)
 	{
-		denominator = newDenominator;
+		return denominator = newDenominator;
 
 	}
 };
